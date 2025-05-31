@@ -1,11 +1,20 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+
+import { TabRoutes } from "./tabs.routes";
+
+const { Navigator, Screen } = createNativeStackNavigator();
 
 export const AuthRoutes = () => {
   return (
-    <View>
-      <Text>AuthRoutes</Text>
-    </View>
+    <Navigator
+      initialRouteName="TabRoutes"
+      screenOptions={{
+        headerShown: false
+      }}
+    >
+      <Screen name="TabRoutes" component={TabRoutes} />
+    </Navigator>
   );
 };
 

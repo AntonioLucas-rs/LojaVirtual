@@ -1,21 +1,16 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, StatusBar } from 'react-native';
 
+import { Routes } from './routes';
 
 export const MyApp = () => {
   return (
-    <View style={{
-          flex: 1,
-          alignItems: 'center',
-          justifyContent: 'center',
-          backgroundColor: 'white',
-        }}>
-      <Text style={{
-          fontSize: 25,
-          fontWeight: 800,
-        }}
-      >Loja Virtual</Text>
-    </View>
+    <>
+      <StatusBar barStyle={'dark-content'} backgroundColor={'#FFFFFF'} translucent />
+      <View style={{ flex: 1, backgroundColor: '#FFFFFF' }}>
+        <Routes />
+      </View>
+    </>
   );
 };
 
