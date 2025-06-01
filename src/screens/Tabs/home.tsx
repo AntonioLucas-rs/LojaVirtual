@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Text } from "react-native";
+import theme from "../../styles/theme";
 
 
 export const Home = () => {
@@ -8,7 +9,8 @@ export const Home = () => {
       style={{
         flex: 1,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        backgroundColor: theme.colors.white,
       }}
     >
     <Text
