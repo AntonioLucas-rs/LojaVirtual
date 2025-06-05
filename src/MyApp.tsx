@@ -6,7 +6,7 @@ import { Routes } from './routes';
 export const MyApp = () => {
   return (
     <>
-      <StatusBar barStyle={'dark-content'} backgroundColor={'#FFFFFF'} translucent />
+      <StatusBar barStyle={'dark-content'} backgroundColor={'#FFFFFF'}  />
       <View style={{ flex: 1, backgroundColor: '#FFFFFF' }}>
         <Routes />
       </View>
